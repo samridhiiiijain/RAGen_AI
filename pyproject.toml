@@ -12,5 +12,6 @@ dependencies = []
 [project.scripts]
 assignment = "genai_assignment.cli:app"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.setuptools]
+package-dir = {genai_assignment = "src"}
+packages = ["genai_assignment", "genai_assignment.p1", "genai_assignment.p2"]

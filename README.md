@@ -14,7 +14,7 @@ This project implements two applied GenAI systems for a cost-efficient RAG quest
 
 - `data/corpus/` - synthetic source documents in Markdown, HTML, and generated PDF form.
 - `data/eval/questions.jsonl` - gold retrieval and answer evaluation set.
-- `src/genai_assignment/` - reusable code for config, ingestion, retrieval, evaluation, and judging.
+- `src/` - reusable code for config, ingestion, retrieval, evaluation, and judging.
 - `outputs/` - generated indexes, logs, metrics, and reports.
 
 ## Environment
