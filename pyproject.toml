@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genai-placement-assignment"
+version = "0.1.0"
+description = "RAG and LLM-as-judge placement assignment implementation"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+assignment = "genai_assignment.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

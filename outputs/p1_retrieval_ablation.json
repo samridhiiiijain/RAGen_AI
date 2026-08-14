@@ -1,0 +1,39 @@
+{
+  "top_k": 5,
+  "dense_only": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.9412,
+    "p50_latency_ms": 0.064,
+    "p95_latency_ms": 0.084
+  },
+  "bm25_only": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.8451,
+    "p50_latency_ms": 0.205,
+    "p95_latency_ms": 0.314
+  },
+  "dense_bm25_rrf": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.9265,
+    "p50_latency_ms": 0.179,
+    "p95_latency_ms": 0.263
+  },
+  "dense_bm25_rrf_cross_encoder": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.9706,
+    "p50_latency_ms": 65.344,
+    "p95_latency_ms": 91.391
+  },
+  "notes": [
+    "RRF uses k=60 and fuses dense and BM25 rankings after metadata filtering.",
+    "The cross-encoder reranks the top fused candidates; first run may include model loading outside measured per-question timings."
+  ]
+}

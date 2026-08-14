@@ -1,0 +1,418 @@
+{
+  "top_k": 5,
+  "questions": 21,
+  "answerable_questions": 17,
+  "hit_rate": 1,
+  "recall": 1.0,
+  "mrr": 0.9412,
+  "ndcg": 0.9566,
+  "context_precision": 0.5324,
+  "p50_latency_ms": 9.538,
+  "p95_latency_ms": 21.734,
+  "rows": [
+    {
+      "id": "q001",
+      "question": "How much would we pay for the Growth plan in AcmeOps?",
+      "relevant_doc_ids": [
+        "acme_platform_overview"
+      ],
+      "retrieved_doc_ids": [
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_api_limits",
+        "acme_security",
+        "acme_integrations"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 43.46,
+      "top_score": 0.5192164151827127
+    },
+    {
+      "id": "q002",
+      "question": "In AcmeOps, who is allowed to delete a workspace?",
+      "relevant_doc_ids": [
+        "acme_security"
+      ],
+      "retrieved_doc_ids": [
+        "acme_security"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 21.734,
+      "top_score": 0.3758030044220486
+    },
+    {
+      "id": "q003",
+      "question": "If we are on the Growth plan, how often will AcmeOps sync data to Snowflake?",
+      "relevant_doc_ids": [
+        "acme_integrations"
+      ],
+      "retrieved_doc_ids": [
+        "acme_integrations",
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_data_residency",
+        "acme_api_limits"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 12.905,
+      "top_score": 0.5825550361762667
+    },
+    {
+      "id": "q004",
+      "question": "After a critical AcmeOps incident is closed, do we need to write a postmortem?",
+      "relevant_doc_ids": [
+        "acme_incident_workflows"
+      ],
+      "retrieved_doc_ids": [
+        "acme_incident_workflows",
+        "acme_data_residency",
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_integrations"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 9.809,
+      "top_score": 0.5875882324863796
+    },
+    {
+      "id": "q005",
+      "question": "What API rate limit do we get on the Starter plan in AcmeOps?",
+      "relevant_doc_ids": [
+        "acme_api_limits"
+      ],
+      "retrieved_doc_ids": [
+        "acme_api_limits"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 9.882,
+      "top_score": 0.6646261683353931
+    },
+    {
+      "id": "q006",
+      "question": "Can Starter customers call AcmeOps support by phone?",
+      "relevant_doc_ids": [
+        "acme_support_policy"
+      ],
+      "retrieved_doc_ids": [
+        "acme_support_policy",
+        "acme_platform_overview",
+        "acme_security",
+        "acme_incident_workflows",
+        "acme_integrations"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 8.456,
+      "top_score": 0.6628838037675993
+    },
+    {
+      "id": "q007",
+      "question": "What is the monthly price for the Scale plan in NimbusDesk?",
+      "relevant_doc_ids": [
+        "nimbus_overview"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_overview",
+        "nimbus_support",
+        "nimbus_exports",
+        "nimbus_sla",
+        "nimbus_ai_policy"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 9.72,
+      "top_score": 0.6130546856837586
+    },
+    {
+      "id": "q008",
+      "question": "When a new NimbusDesk workspace is created, are AI reply suggestions already turned on?",
+      "relevant_doc_ids": [
+        "nimbus_ai_policy"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_ai_policy",
+        "nimbus_support",
+        "nimbus_overview",
+        "nimbus_webhooks",
+        "nimbus_sla"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 8.781,
+      "top_score": 0.660600354272241
+    },
+    {
+      "id": "q009",
+      "question": "On NimbusDesk Scale, how much history can a single export include?",
+      "relevant_doc_ids": [
+        "nimbus_exports"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_exports"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 9.694,
+      "top_score": 0.7059985261513827
+    },
+    {
+      "id": "q010",
+      "question": "How many service-level agreement policies can a Team workspace create in NimbusDesk?",
+      "relevant_doc_ids": [
+        "nimbus_sla"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_sla",
+        "nimbus_support",
+        "nimbus_overview",
+        "nimbus_webhooks",
+        "nimbus_exports"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.2,
+      "latency_ms": 8.713,
+      "top_score": 0.6624970490732238
+    },
+    {
+      "id": "q011",
+      "question": "If a NimbusDesk webhook fails, how long will the system keep retrying it?",
+      "relevant_doc_ids": [
+        "nimbus_webhooks"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_webhooks"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 9.947,
+      "top_score": 0.6745862783035197
+    },
+    {
+      "id": "q012",
+      "question": "Is there a free NimbusDesk plan?",
+      "relevant_doc_ids": [
+        "nimbus_support"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_overview",
+        "nimbus_support",
+        "nimbus_exports",
+        "nimbus_ai_policy",
+        "nimbus_sla"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.2,
+      "latency_ms": 8.421,
+      "top_score": 0.7240158545441282
+    },
+    {
+      "id": "q013",
+      "question": "Can AcmeOps Enterprise customers keep event history for longer than the default?",
+      "relevant_doc_ids": [
+        "acme_platform_overview"
+      ],
+      "retrieved_doc_ids": [
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_incident_workflows",
+        "acme_api_limits"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 0.25,
+      "latency_ms": 8.452,
+      "top_score": 0.607845529989948
+    },
+    {
+      "id": "q014",
+      "question": "How many active webhooks can we set up on the NimbusDesk Team plan?",
+      "relevant_doc_ids": [
+        "nimbus_webhooks"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_webhooks"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 9.302,
+      "top_score": 0.7421992348761186
+    },
+    {
+      "id": "q015",
+      "question": "Which AcmeOps customers get quarterly architecture reviews?",
+      "relevant_doc_ids": [
+        "acme_support_policy"
+      ],
+      "retrieved_doc_ids": [
+        "acme_support_policy"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 8.453,
+      "top_score": 0.4940061345723763
+    },
+    {
+      "id": "q016",
+      "question": "Which NimbusDesk plan gives us single sign-on?",
+      "relevant_doc_ids": [
+        "nimbus_overview"
+      ],
+      "retrieved_doc_ids": [
+        "nimbus_support",
+        "nimbus_overview",
+        "nimbus_webhooks",
+        "nimbus_ai_policy",
+        "nimbus_sla"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 0.5,
+      "ndcg": 0.6309297535714575,
+      "context_precision": 0.2,
+      "latency_ms": 9.538,
+      "top_score": 0.6290351510703356
+    },
+    {
+      "id": "q017",
+      "question": "How long does AcmeOps keep encrypted backups?",
+      "relevant_doc_ids": [
+        "acme_data_residency"
+      ],
+      "retrieved_doc_ids": [
+        "acme_data_residency"
+      ],
+      "hit": 1,
+      "recall": 1.0,
+      "mrr": 1.0,
+      "ndcg": 1.0,
+      "context_precision": 1.0,
+      "latency_ms": 7.052,
+      "top_score": 0.5727126880872682
+    },
+    {
+      "id": "q018",
+      "question": "How long does the AcmeOps mobile app keep data available offline?",
+      "relevant_doc_ids": [],
+      "retrieved_doc_ids": [
+        "acme_data_residency",
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_integrations",
+        "acme_api_limits"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "latency_ms": 8.829,
+      "top_score": 0.5441571143426122
+    },
+    {
+      "id": "q019",
+      "question": "Which payment processor does NimbusDesk use for billing?",
+      "relevant_doc_ids": [],
+      "retrieved_doc_ids": [
+        "nimbus_overview",
+        "nimbus_support",
+        "nimbus_webhooks",
+        "nimbus_ai_policy",
+        "nimbus_exports"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "latency_ms": 8.553,
+      "top_score": 0.6059501290799676
+    },
+    {
+      "id": "q020",
+      "question": "What uptime guarantee does AcmeOps promise?",
+      "relevant_doc_ids": [],
+      "retrieved_doc_ids": [
+        "acme_platform_overview",
+        "acme_support_policy",
+        "acme_integrations",
+        "acme_api_limits",
+        "acme_incident_workflows"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "latency_ms": 10.911,
+      "top_score": 0.5846573326000855
+    },
+    {
+      "id": "q021",
+      "question": "Who runs NimbusDesk as CEO?",
+      "relevant_doc_ids": [],
+      "retrieved_doc_ids": [
+        "nimbus_overview",
+        "nimbus_support",
+        "nimbus_exports",
+        "nimbus_webhooks",
+        "nimbus_ai_policy"
+      ],
+      "hit": 0,
+      "recall": 0.0,
+      "mrr": 0.0,
+      "ndcg": 0.0,
+      "context_precision": 0.0,
+      "latency_ms": 10.471,
+      "top_score": 0.5984886137179222
+    }
+  ]
+}

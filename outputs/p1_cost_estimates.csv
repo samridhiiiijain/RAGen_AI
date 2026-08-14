@@ -1,0 +1,4 @@
+vectors,qdrant_storage_gb,qdrant_monthly_usd,pinecone_monthly_usd,notes
+100000,0.229,24.0,25.0,small 2 vCPU VM plus disk
+1000000,2.289,80.0,25.0,4 vCPU VM plus SSD disk
+10000000,22.888,320.0,157.55,larger memory VM or small cluster

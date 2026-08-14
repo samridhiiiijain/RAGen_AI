@@ -1,0 +1,10 @@
+{"id":"j001","preferred_config":"grounded","notes":"Grounded answer should avoid inventing phone escalation."}
+{"id":"j002","preferred_config":"grounded","notes":"Grounded answer should keep export coverage and retention separate."}
+{"id":"j003","preferred_config":"grounded","notes":"Grounded answer should preserve disabled-by-default detail."}
+{"id":"j004","preferred_config":"tie","notes":"Both prompts can answer direct security facts correctly."}
+{"id":"j005","preferred_config":"grounded","notes":"Grounded answer should avoid mixing webhook policies."}
+{"id":"j006","preferred_config":"grounded","notes":"Grounded answer should avoid over-promising EU storage."}
+{"id":"j007","preferred_config":"tie","notes":"Simple factual prompt likely equal."}
+{"id":"j008","preferred_config":"tie","notes":"Simple plan lookup likely equal."}
+{"id":"j009","preferred_config":"grounded","notes":"Grounded answer is expected to refuse unsupported cache duration."}
+{"id":"j010","preferred_config":"tie","notes":"Simple factual prompt likely equal."}

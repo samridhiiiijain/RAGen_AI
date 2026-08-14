@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+pytest-cache-files-*
+outputs/pytest_cache/
+outputs/pytest_tmp/
+outputs/unit_tmp/
+outputs/test_p2_report/
+outputs/qdrant/

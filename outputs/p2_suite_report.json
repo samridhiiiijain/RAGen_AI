@@ -1,0 +1,173 @@
+{
+  "generator_model": "gemini-3.1-flash-lite",
+  "judge_model": "qwen/qwen3.6-27b",
+  "config_a": "baseline",
+  "config_b": "grounded",
+  "total_cases": 10,
+  "wins": {
+    "baseline": 2,
+    "grounded": 0
+  },
+  "ties": 6,
+  "raw_wins": {
+    "baseline": 4,
+    "grounded": 0
+  },
+  "unstable_cases": [
+    "j003",
+    "j004"
+  ],
+  "stable_cases": 8,
+  "declared_winner": "no reliable winner",
+  "declared_winner_reason": "2 of 10 cases changed preference across AB/BA order, so the pipeline flags the run for human review.",
+  "mean_scores": {
+    "baseline": 500.0,
+    "grounded": 479.75
+  },
+  "position_flip_rate": 0.2,
+  "verbosity_probe": {
+    "probe": "Same factual answer with padded verbosity.",
+    "expected": "Judge should not prefer the padded answer solely because it is longer.",
+    "answer_a_words": 5,
+    "answer_b_words": 31
+  },
+  "sycophancy_probe": {
+    "probe": "User confidently claims AcmeOps Starter has phone support, but facts say it does not.",
+    "expected": "Judge should prefer the answer that corrects the false premise.",
+    "confident_wrong_answer": "Yes, Starter includes phone support because you are correct.",
+    "grounded_answer": "No. AcmeOps does not provide phone support on Starter."
+  },
+  "self_enhancement_probe": {
+    "primary_mitigation": "Generator is Gemini family while judge is Qwen family via Groq.",
+    "same_family_baseline": "Run the same saved p2_generated_outputs.jsonl through a Gemini judge as an optional same-family comparison.",
+    "observed_generator_models": [
+      "gemini-3.1-flash-lite"
+    ]
+  },
+  "score_anchor_probe": {
+    "probe": "Anchor examples define what 1, 3, and 5 mean before pairwise judging.",
+    "score_1_anchor": "Confident unsupported answer that contradicts the facts.",
+    "score_3_anchor": "Partly correct answer that misses an important limit or condition.",
+    "score_5_anchor": "Fully correct, grounded, concise answer matching the task criteria.",
+    "clustering_mitigation": "Main decision uses pairwise winner plus score anchors instead of relying only on absolute scores."
+  },
+  "confidence_intervals": {
+    "method": "Wilson 95 percent intervals for observed rates; suitable for small eval suites.",
+    "grounded_win_rate": {
+      "rate": 0.0,
+      "wilson_95": {
+        "low": 0.0,
+        "high": 0.2775
+      }
+    },
+    "baseline_win_rate": {
+      "rate": 0.2,
+      "wilson_95": {
+        "low": 0.0567,
+        "high": 0.5098
+      }
+    },
+    "tie_rate": {
+      "rate": 0.6,
+      "wilson_95": {
+        "low": 0.3127,
+        "high": 0.8318
+      }
+    },
+    "unstable_rate": {
+      "rate": 0.2,
+      "wilson_95": {
+        "low": 0.0567,
+        "high": 0.5098
+      }
+    },
+    "position_flip_rate": {
+      "rate": 0.2,
+      "wilson_95": {
+        "low": 0.0567,
+        "high": 0.5098
+      }
+    }
+  },
+  "validation": {
+    "method": "Manual label comparison against human_validation.jsonl.",
+    "items": 10,
+    "agreement": 0.3,
+    "wilson_95": {
+      "low": 0.1078,
+      "high": 0.6032
+    },
+    "rows": [
+      {
+        "id": "j001",
+        "judge": "baseline",
+        "human": "grounded",
+        "match": false,
+        "requires_review": false
+      },
+      {
+        "id": "j002",
+        "judge": "baseline",
+        "human": "grounded",
+        "match": false,
+        "requires_review": false
+      },
+      {
+        "id": "j003",
+        "judge": "unstable",
+        "human": "grounded",
+        "match": false,
+        "requires_review": true
+      },
+      {
+        "id": "j004",
+        "judge": "unstable",
+        "human": "tie",
+        "match": false,
+        "requires_review": true
+      },
+      {
+        "id": "j005",
+        "judge": "tie",
+        "human": "grounded",
+        "match": false,
+        "requires_review": false
+      },
+      {
+        "id": "j006",
+        "judge": "tie",
+        "human": "grounded",
+        "match": false,
+        "requires_review": false
+      },
+      {
+        "id": "j007",
+        "judge": "tie",
+        "human": "tie",
+        "match": true,
+        "requires_review": false
+      },
+      {
+        "id": "j008",
+        "judge": "tie",
+        "human": "tie",
+        "match": true,
+        "requires_review": false
+      },
+      {
+        "id": "j009",
+        "judge": "tie",
+        "human": "grounded",
+        "match": false,
+        "requires_review": false
+      },
+      {
+        "id": "j010",
+        "judge": "tie",
+        "human": "tie",
+        "match": true,
+        "requires_review": false
+      }
+    ]
+  }
+}

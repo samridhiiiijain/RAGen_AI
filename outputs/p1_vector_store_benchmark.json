@@ -1,0 +1,23 @@
+{
+  "top_k": 5,
+  "qdrant": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.9412,
+    "p50_latency_ms": 0.577,
+    "p95_latency_ms": 1.341
+  },
+  "faiss": {
+    "questions": 21,
+    "answerable_questions": 17,
+    "hit_rate": 1,
+    "mrr": 0.9412,
+    "p50_latency_ms": 0.028,
+    "p95_latency_ms": 0.146
+  },
+  "notes": [
+    "Both stores use all-MiniLM-L6-v2 normalized dense vectors and inner-product/cosine scoring.",
+    "Qdrant applies metadata filters natively; FAISS over-retrieves and post-filters in Python."
+  ]
+}

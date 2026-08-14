@@ -1,0 +1,12 @@
+{
+  "baseline": {
+    "name": "baseline",
+    "system_suffix": "Answer the user's question clearly and helpfully.",
+    "temperature": 0.2
+  },
+  "grounded": {
+    "name": "grounded",
+    "system_suffix": "Use only the provided facts. If a fact is missing, say you do not know. Keep the answer concise and cite the relevant fact in plain language.",
+    "temperature": 0.0
+  }
+}
